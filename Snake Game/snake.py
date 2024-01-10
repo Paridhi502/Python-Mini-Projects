@@ -6,7 +6,6 @@ DOWN = 270
 LEFT = 180
 RIGHT = 0
 
-
 class Snake:
 
     def __init__(self):
@@ -28,6 +27,13 @@ class Snake:
     def snake_extend(self):
         self.add_snake(self.segments[-1].position())
 
+
+    def reset_snake(self):
+        for seg in self.segments:
+            seg.goto(1000,2000)
+        self.segments.clear()
+        self.create_snake()
+        self.head=self.segments[0]
 
 
     def move(self):

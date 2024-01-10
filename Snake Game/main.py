@@ -39,8 +39,10 @@ while game_is_on:
         or snake.head.ycor() > 280
         or snake.head.ycor() < -280
     ):
-        game_is_on = False
-        score.game_over()
+        score.reset()
+        snake.reset_snake()
+        #game_is_on = False
+        #score.game_over()
 
     #detect collision with the snake itself
 
@@ -48,8 +50,10 @@ while game_is_on:
         if segment == snake.head:
             pass
         elif snake.head.distance(segment) <10:
-            game_is_on = False
-            score.game_over()
+            score.reset()
+            snake.reset_snake()
+            #game_is_on = False
+            #score.game_over()
 
 
 screen.exitonclick()
