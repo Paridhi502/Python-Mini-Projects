@@ -1,1 +1,10 @@
+The following is a Python Email Automation Code
+1. To send Monday Motivational Quotes
+2. To Send Birthday Wishes by crosschecking the current date with the dates saved in our CSV File
+
+Have used Python Libraries SMTP and datetime to carry out this task
+Have deployed the files in cloud-pythonanywhere so that is already running in the background and checks the task every single day
+
+
+
 
